@@ -1,0 +1,158 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.about-container {
+  width: 80%;
+  margin: 10vh 10%;
+  height: auto;
+  flex-grow: 1;
+  display: inline-block;
+  border: $border;
+}
+.professional {
+  height: 64vh;
+  margin: 3% auto 0px;
+  overflow: hidden;
+  min-width: 90%;
+}
+.personal {
+  height: auto;
+  background-color: #0000;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cv {margin: auto;
+  img {height: auto;}
+}
+.personal-1 { height: 40vh; width: 100%; background-color: transparent;}
+.personal-2 { height: 40vh; width: 100%; background-color: transparent;}
+.personal-3 { height: 40vh; width: 100%; background-color: transparent;}
+.personal-4 { height: 40vh; width: 100%; background-color: transparent;}
+
+.links {
+  background-color: #f6f6f6;
+  height: 11vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.flip-card-back {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  overflow: scroll;
+  p, ul {font-size: 1.5em;
+    padding: 5%;
+  }
+}
+@media (max-width: 992px) {
+.about-container {
+    grid-template-columns: 0.8fr 1.3fr;
+    .card-about { min-height: 18vh;}
+  }
+}
+@media(max-width: 768px) {
+  .about-container {
+    display: contents;
+    justify-content: space-around;}
+  .professional {
+    overflow: scroll;
+    height: auto;}
+  .cv { position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)}
+  .middle { width: 50%;}
+}
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .about-container {margin-top: 8vh; height: 80vh; margin-top: 5vh;
+      height: 77vh; grid-template-columns: 1fr;}
+    .personal {height: 77vh;}
+    .professional {height: 77vh; margin: 0;}
+    .cv {width: 100%;}
+    .flip-card-back p, .flip-card-back ul {
+    font-size: 14px;
+    padding: 5%;}
+    .personal {margin: 0%;}
+  }
+  .card-about { min-height: 15vh;}
+
+.flip-card-image {
+  background-color: rgba(58, 58, 238, 0.871);
+  background-position: center;
+}
+.flip-card-inner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 4em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+.cv {
+  position: relative;
+  width: 99%;
+}
+.cv-image {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  transition: .3s ease;
+  backface-visibility: hidden;
+  // border-radius: 8px;
+}
+.middle {
+  display: flex;
+  transition: .3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.cv-image:hover {
+  opacity: 0.5;
+}
+.cv:hover .middle {
+  opacity: 1;
+}
+.button {
+  margin: auto;
+  align-content: center;
+  font-weight: bolder;
+  padding: 8px 16px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  color: white;
+  background-color: #A21017;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.button:hover {
+  background-color: white;
+  color: #A21017;
+  transition: linear .3s;
+  text-decoration: none;
+}
+.visit-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}

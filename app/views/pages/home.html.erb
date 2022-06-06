@@ -1,0 +1,50 @@
+<section class="content-section home-section" id="">
+  <div class="container home-container col-10">
+    <div class="about-me card home-left-image" style="" id="left-image";>
+      <div class="col card card-about image-text-upper">
+        <h3>Hi, <span class="underline">I'm Neil.</span></h3> <h4>A full stack web developer based in London.</h4>
+      </div>
+      <div class="col card card-about w-100 col-12 image-text-lower">
+        <p>Have a look around, see what projects I've worked on, what I've got coming up, and learn a bit more about me. <br><br>
+          I'm currently looking for a web development role in London or remote. If you see something that interests you, feel free to get in touch. <br>
+        </p>
+      </div>
+    </div>
+    <div class="cards-container col-12">
+      <div class="cards-holder w-100 col-12">
+        <div class="row cards">
+          <div class="col card-skills card-projects col-12 w-100 nav-link js-scroll-trigger" style="background-image: url(https://res.cloudinary.com/k2x4b-523p/image/upload/v1653527656/bg1_m2ljck.png)">
+            <a href="#projects">Projects</a>
+          </div>
+          <div class="col card-skills nav-link js-scroll-trigger" style="background-image: url(https://res.cloudinary.com/k2x4b-523p/image/upload/v1653527653/bg2_uwngik.png)">
+            <a href="#about">About Me</a>
+          </div>
+        </div>
+      </div>
+    <div class="card card-links" style="background-image: url(https://res.cloudinary.com/k2x4b-523p/image/upload/v1653560141/bg3_h5nhhu.png);">
+      <a class="fab fa-github fa-2x" target="blank" href="https://github.com/neilgoodridge"></a>
+      <a class="fab fa-linkedin-in fa-2x" target="blank" href="https://linkedin.com/in/neilgoodridge/"></a>
+      <a class="fab fa-regular fa-comment" target="_blank" href="https://wa.me/447500041449"></a>
+      <a class="fab fa-solid fa-at" href="mailto:neilrgoodridge@gmail.com"></a>
+      <a class="fab fa-solid fa-phone" href="tel:07500041449"></a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" style="background-image: url();" id="projects">
+  <%= render 'projects' %>
+    <a class="js-scroll-trigger" href="#projects"></a>
+</section>
+
+<section class="content-section" style="background-image: url();" id="about">
+  <a class="js-scroll-trigger" href="#about"></a>
+  <%= render 'about' %>
+</section>
+
+
+<%# scroll button %>
+<a href="#" class="scrollup" id="scroll-top"><i class="fas fa-arrow-circle-up"></i></a>
+
+<%# scroll button function %>
+<%= javascript_pack_tag 'scroll_top.js' %>
