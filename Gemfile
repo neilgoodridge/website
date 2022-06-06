@@ -11,6 +11,8 @@ gem 'sqlite3', '~> 1.4'
 # instead of sqlite3 for heroku deployment
 gem 'pg'
 
+# image upload support
+gem 'cloudinary', '~> 1.16.0'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -26,7 +28,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "autoprefixer-rails", "10.2.5"
-gem "font-awesome-sass", "~> 5.6.1"
+gem "font-awesome-sass"
 gem "simple_form", github: 'heartcombo/simple_form'
 
 # Reduces boot times through caching; required in config/boot.rb

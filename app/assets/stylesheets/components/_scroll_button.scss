@@ -4,13 +4,13 @@
   bottom: -20%;
   background-color: var(--first-color);
   color: red;
-  opacity: .8;
-  padding: 0 .3rem;
+  opacity: 1;
+  // padding: 0 .3rem;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
   font-size: 42px;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .scrollup:hover {
@@ -25,7 +25,7 @@
 
 /* Show scroll */
 .show-scroll {
-  bottom: 2rem;
+  bottom: 1rem;
 }
 
 @media only screen and (max-width: 500px) {
