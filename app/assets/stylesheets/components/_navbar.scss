@@ -1,9 +1,8 @@
 .navbar-brand img {
   min-width: 30px;
-  height: 29px;
+  height: 30px;
   background-color: transparent;
   opacity: 0.5;
-  margin: 0vh 0 8% 0;
 }
 
 .navbar-brand img:hover {
@@ -20,7 +19,7 @@
   background-color: rgba(0, 0, 0, 0.1);
   font-family: 'Quicksand', sans-serif;
   position: fixed;
-  z-index: 10;
+  z-index: 3;
 }
 
 .nav>.nav-header {
