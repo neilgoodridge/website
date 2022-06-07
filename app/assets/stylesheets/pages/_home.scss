@@ -39,11 +39,14 @@
   .container {display: contents; height: 95vh;}
   // .card-photo {height: 30vh;}
   .card-about, .card-links, .card-skills {border-radius: 0px;}
+  .container-projects {margin: 12vh 0}
+  .card-skills  {display: none;}
   .image { height: 29vh; margin: auto;}
-  .card-about { min-height: 30vh;}
+  .card-about { min-height: 30vh; margin-top: 5vh;}
   .card-contact {margin-bottom: 2vh; border-radius: 0px;}
   // .card-links {height: 5vh;}
   .cards {box-shadow: none;}
+  .card-project, .card-project-left {margin: none; border: none; height: 23vh;}
 }
 
 .col-1 {width: 8.33%;}

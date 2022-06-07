@@ -16,6 +16,7 @@
   .cards {grid-gap: 1em;}
   .card-links {margin: 0; border: none;}
   #image-text-upper {height: 20vh;}
+  .cards-holder {display: none;}
   .card-about {
     margin-bottom: 2vh;
     // height: 30vh;
@@ -28,23 +29,25 @@
   .cards-container {display: flex; flex-direction: column-reverse;}
   .card-photo {height: 30vh;}
   .image { height: 25vh;}
-  .card-skills {border-radius: 0px; margin: 1vh 0; height: 15vh; border: $border;}
+  .card-skills {display: none;}
+  // .container-projects {margin: 12vh 9vw}
   .card-links {height: 6vh;
     border-top: $border;
-  position: -webkit-fixed;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 3;}
+    position: -webkit-fixed;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;}
   .cards {margin: 0px;}
   .card-about {
-    margin: 0;
-    min-height: 30vh;
+    margin-top: 5vh;
+    min-height: 30vh;}
     h3 {font-size: 1.6em;}
     h4 {font-size: 1.4em}
-    p {font-size: 1.2em; margin: 0em 0.5em}
+    p {font-size: 1.1em; margin: 3em 1em 0em 1em}
+
   }
-}
+
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
@@ -53,9 +56,11 @@
     .card-about {height: 45.5vh;}
 }
 @media (max-width: 500px) {
-  .card-project, .card-project-left {height: 22vh; margin-top: 4vh;
-    margin: 0;
-    border-radius: 0;}
+  // .personal {display: block; height: 94vh;}
+  // .card-project, .card-project-left {height: 22vh; margin-top: 4vh;
+  //   margin: 0;
+  //   border-radius: 0;}
+    .card-about {height: 20vh;}
     .nav { margin-bottom: 5vh;}
     .card-project img, .card-project-left img { box-shadow: none; filter: grayscale(0%); }
     .card-project p, .card-project-left p { padding-top: 0;}
@@ -71,7 +76,7 @@
     .card-about {height: 45.5vh;}
     .cards { grid-gap: 10px; margin-top: 0px;}
     .card-skills {min-height: 18vh;}
-    .card-project, .card-project-left { height: 30vh; margin: 12px 12px 0px 12px;
+    .card-project, .card-project-left { height: 30vh;
       h2 {font-size: 16px;}
       p {padding-top: 0px; font-size: 13px; max-width: 47%;}
     }

@@ -2,7 +2,7 @@
   flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 16px;
+  // grid-gap: 16px;
   margin: auto;
   text-align: center;
   text-decoration: none;
@@ -42,9 +42,9 @@
   margin: 2vh 0;
   text-shadow: none;
   overflow: scroll;
-  p {margin: 1em 1em;
+  p {margin: 1em 1em 0;
     color: black;
-    font-size: 24px;
+    font-size: 1.3rem;
     text-shadow: 0 0 12px white;}
     h4 {
         color: black;
@@ -66,10 +66,10 @@
   justify-content: space-around;
   height: 34vh;
   min-height: 10vh;
-  border: $border;
+  // border: $border;
   background-size: cover;
   background-position: center;
-
+  opacity: 0.9;
 
 }
 
@@ -88,9 +88,9 @@
 }
 
 .card-skills:hover {
-  border: 2px #F6F6F6 solid;
+  // border: 2px #F6F6F6 solid;
   cursor: pointer;
-  transition: .2s;
+  // transition: .2s;
   color: #fff;
 }
 #card-link, a:link, a:visited, a:hover, a:active, {
@@ -103,9 +103,9 @@
   max-height: 85vh;
 
 }
-  .about-me {
+.about-me {
   align-items: center;
-  border: $border;
+  // border: $border;
   justify-content: space-between;
   font-size: 18px;
   color: #023047;
@@ -132,18 +132,29 @@
   text-decoration: none;
 }
 .card-links {
-  height: 6vh;
+  height: 5.9vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-radius: 0px;
-  margin-top: 2vh;
+  // margin-top: 2vh;
   padding: 0px 2vw;
   color: rgba(0,0,0,0.3);
   display: flex;
-  border: $border;
+  // border: $border;
   flex-direction: row;
   align-items: center;
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 500px) {
+  .container-projects {margin: 12vh;}
+  .card-links {border-top: $border}
+  .card-project, .card-project-left {margin: 0em; border: none; height: 23vh;}
+
+  // .card-project, .card-project-left {margin: 0em;}
+  .card-about {height: 36vh;
+   p {font-size: 1.1em;}
+  }
 }

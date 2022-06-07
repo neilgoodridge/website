@@ -5,7 +5,6 @@
   background-color: var(--first-color);
   color: red;
   opacity: 1;
-  // padding: 0 .3rem;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -30,7 +29,9 @@
 
 @media only screen and (max-width: 500px) {
   .show-scroll {
-    right: -3vw;
-    bottom: 7vh;
+    right: 0vw;
+    bottom: 6vh;
   }
+  .scrollup {font-size: 1.75em;}
 }
+
