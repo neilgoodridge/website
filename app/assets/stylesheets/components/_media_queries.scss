@@ -4,7 +4,7 @@
     margin-bottom: 2vh;
     height: 40.5vh;
     p {font-size: 21px;
-    margin: 0 0.5em;
+    margin: 0 5vh;
   padding-bottom: 2vh;}
   }
 }
@@ -18,10 +18,10 @@
   #image-text-upper {height: 20vh;}
   .cards-holder {display: none;}
   .card-about {
+    height: 33vh;
     margin-bottom: 2vh;
-    // height: 30vh;
-    p {margin: 1em 1em; font-size: 24px;}
-    h3 {margin: 11vh 0;}
+    p {margin: 1em 10vh 0; font-size: 24px;}
+    h3 {margin: 7vh 5vw 14vh}
   }
 }
 @media only screen and (max-width: 500px) {
@@ -42,9 +42,8 @@
   .card-about {
     margin-top: 5vh;
     min-height: 30vh;}
-    h3 {font-size: 1.6em;}
-    h4 {font-size: 1.4em}
-    p {font-size: 1.1em; margin: 3em 1em 0em 1em}
+    h3 {font-size: 1.6em; margin: 2vh 5vw 2vh;}
+
 
   }
 
@@ -60,7 +59,10 @@
   // .card-project, .card-project-left {height: 22vh; margin-top: 4vh;
   //   margin: 0;
   //   border-radius: 0;}
-    .card-about {height: 20vh;}
+    .card-about {height: 45vh;
+      h3 { font-size: 1.6em; margin: 2vh 5vw 2vh;}
+      p {font-size: 1.1em; margin: 3em 1em 0em 1em}
+    }
     .nav { margin-bottom: 5vh;}
     .card-project img, .card-project-left img { box-shadow: none; filter: grayscale(0%); }
     .card-project p, .card-project-left p { padding-top: 0;}
