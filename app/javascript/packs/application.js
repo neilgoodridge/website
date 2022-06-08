@@ -9,6 +9,7 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
 import "./scroll_top"
+import "./hide_items"
 
 Rails.start()
 Turbolinks.start()
