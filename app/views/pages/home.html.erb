@@ -1,24 +1,33 @@
-<div class="homepage" style="background-image: url('https://images.unsplash.com/photo-1550684848-86a5d8727436?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80')">
-  <%# <button id="btnHome">Let's Go!</button> %>
+<div class="homepage" style="background-image: url()">
   <div class="homePage" id="showHome">
     <div class="homepage-sections">
       <div class="homepage-container">
         <div class="intro-tab tab">
           <h2 class="tab-heading">Welcome</h2>
-          <div class="hide-div" style="background-image: url()">
-            <h3>Hi, I'm Neil.</span></h3> <h4>A full stack web developer based in London.</h4>
-            <p>Have a look around, see what projects I've worked on, what I've got coming up, and learn a bit more about me. <br><br>
-              I'm currently looking for a web development role in London or remote. If you see something that interests you, feel free to get in touch. <br>
-            </p>
+          <div class="tab-surround">
+            <div class="hide-div" style="background-image: url()">
+              <h3>Hi, I'm Neil.</span></h3> <h4>A full stack web developer based in London.</h4>
+              <p>Have a look around, see what projects I've worked on, what I've got coming up, and learn a bit more about me. <br><br>
+                I'm open to a web development role in London or remote. If you see something that interests you, please get in touch  ↗ <br>
+              </p>
+            </div>
           </div>
         </div>
         <div class="projects-tab tab">
           <h2 class="tab-heading">Projects</h2>
-          <%= render 'projects' %>
+          <div class="tab-surround">
+            <div class="hide-div" style="background-image: url()">
+              <%= render 'projects' %>
+            </div>
+          </div>
         </div>
         <div class="about-me-tab tab">
           <h2 class="tab-heading">About</h2>
-          <%= render 'about' %>
+          <div class="tab-surround">
+            <div class="hide-div" style="background-image: url()">
+              <%= render 'about' %>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -29,4 +38,7 @@
 
 
 <%# scroll button function %>
-<%= javascript_pack_tag 'hide_items.js' %>
+<%# <%= javascript_pack_tag 'hide_items.js' %>
+
+<%# background image: url  %>
+<%# 'https://images.unsplash.com/photo-1550684848-86a5d8727436?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80clearthistextforbackground' %>

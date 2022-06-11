@@ -1,27 +1,16 @@
-<div class=" container-projects col">
-  <div class="card-project">
-    <img src="https://res.cloudinary.com/k2x4b-523p/image/asset/v1627324570/oa-7c0f103bd709a0d0bf082573dca098f2.png" class="project-image" />
-    <%= link_to 'http://www.theoa.org', target:"_blank"  do %>
-    <div class="card-project-info">
-      <h2 class="underline">The OA</h2>
-      <p>An <strong>Online Activism</strong> platform built by a team of 4 over 9 days. <br> <br>Built using Ruby on Rails, this website gives people the chance to affect change on social issues they feel passionate about, while not being able to get on the streets and demonstrate. </p>
-    </div>
+<div class="projects-container">
+  <div class="project-card project-card-1" style="background-image: url(https://res.cloudinary.com/k2x4b-523p/image/asset/v1627324570/oa-7c0f103bd709a0d0bf082573dca098f2.png)">
+    <h5>The OA</h5>
+    <p>An <strong>Online Activism</strong> platform built by a team of 4 over 9 days. <br> <br>Built using Ruby on Rails, this website gives people the chance to affect change on social issues they feel passionate about, while not being able to get on the streets and demonstrate. </p>
   </div>
-  <% end %>
-  <div class="card-project-left">
-    <img src="https://res.cloudinary.com/k2x4b-523p/image/asset/v1627324563/Water-RnR-a515618c958a63d29fe3ec311d599830.png" class="project-image-left" />
-    <%= link_to 'https://water-rnr.herokuapp.com', target:"_blank" do %>
-    <div class="card-project-info-left">
-      <h2 class="underline">Water RnR</h2>
-      <p>Forget AirBnB. <strong>Water RnR</strong> allows you to find a relaxing residential pool in your area for a much needed dip. <br><br> Hire outside someone elses pool, or set yourself up as a host and rent out your own for a given amount of time. Refreshing!</p>
-    </div>
+  <div class="project-card project-card-2" style="background-image: url(https://res.cloudinary.com/k2x4b-523p/image/asset/v1627324563/Water-RnR-a515618c958a63d29fe3ec311d599830.png)">
+    <h5>Water RnR</h5>
+    <p>Forget AirBnB. <strong>Water RnR</strong> allows you to find a relaxing residential pool in your area for a much needed dip. <br><br> Hire outside someone elses pool, or set yourself up as a host and rent out your own for a given amount of time. Refreshing!</p>
   </div>
-  <% end %>
-  <div class="card-project">
-    <img src="https://res.cloudinary.com/k2x4b-523p/image/asset/v1627324573/soon-d044ee920b9f8dbfcd16371b1dbc6b9e.png" class="project-image project-image-avik h-90" />
-    <div class="card-project-info">
-      <h2 class="underline">Avik's Dioramas</h2>
-      <p>Move over WWE! <strong>Avik's Dioramas</strong> bring to life the action figures of past and present. <br><br> Incorporating all 4 CRUD actions, once completed this site will be passed over to the admin who once logged in will be able to upload, edit and delete weekly scenes based on WWE events directly on the site. </p>
-    </div>
+  <div class="project-card project-card-3" style="background-image: url(https://res.cloudinary.com/k2x4b-523p/image/upload/v1652448163/F1_zwisgj.png)">
+    <h5>F1 Database (Coming Soon)</h5>
+    <p>I'm building a database using historic F1 data. Using an API, it will allow you to find stats and info from 1950 through to the most recent weekend.</p>
   </div>
 </div>
+
+<%= javascript_pack_tag 'fade_in.js' %>
