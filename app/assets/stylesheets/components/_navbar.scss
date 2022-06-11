@@ -1,6 +1,7 @@
 .navbar-brand img {
   min-width: 30px;
   height: 30px;
+  margin: 1vh 0 0 0;
   background-color: transparent;
   opacity: 0.5;
 }
@@ -11,15 +12,13 @@
 }
 
 .nav {
-  min-height: 4vh;
+  min-height: 5vh;
   width: 100%;
   background-color: transparent;
   position: relative;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.1);
   font-family: 'Quicksand', sans-serif;
   position: fixed;
-  z-index: 3;
 }
 
 .nav>.nav-header {
