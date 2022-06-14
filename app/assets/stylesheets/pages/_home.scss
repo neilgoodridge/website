@@ -12,7 +12,7 @@
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: $transition;
+  // transition: $transition;
   overflow: hidden;
 }
 .tab {
@@ -23,13 +23,13 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
-    h2 {-webkit-text-stroke: 1px black; font-size: 4em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif;}
-    h3, h4 {-webkit-text-stroke: 1px black;font-size: 2.2em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif; margin: 1vh 3vh;}
+    h2 {transition: $transition;-webkit-text-stroke: 1px black; font-size: 4em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif;}
+    h3, h4 {transition: $transition; -webkit-text-stroke: 1px black;font-size: 2.2em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif; margin: 1vh 3vh;}
     &:hover {width: 100%; border-top: 2px transparent solid;
-      h2 {font-size: 6em; color: black; }
+      h2 {font-size: 6em; color: black;}
       h3, h4 {color: black;}
       h2, h5, p, a, .tab-surround, .container-projects, .personal
-      {  transition: $transition; opacity: 1;}
+      { opacity: 1;}
   }
 }
 .intro-tab {
@@ -98,17 +98,26 @@
 @keyframes slideinintro {
   from {
     margin-right: 100%;
-    width: 55vw;
-  }
+    width: 55vw;}
   to {
     margin-right: 0%;
-    width: 55vw;
-  }
+    width: 55vw;}
 }
+
 .profile {
+  transition: $transition;
   border: 16px solid lightcoral;
   background: radial-gradient(circle, lightyellow 55%, lightblue 55%);
   border-radius: 50%;
   height: 20vh;
 }
 
+.profileHover {
+  animation-name: profileHover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes profileHover {
+  from {transform: scale(1);}
+  to {transform: scale(1.15);}
+}

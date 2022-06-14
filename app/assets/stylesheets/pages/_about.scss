@@ -30,7 +30,6 @@
     font-weight: bold;
     -webkit-text-stroke: 1px black;
     color: white;
-    transition: $transition;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -49,7 +48,6 @@
     background-size: 80%;
     background-repeat: no-repeat;
     background-position-y: top;
-    filter: drop-shadow(2px 0px 4px #444);
   }
 }
 #aboutCard2 {
@@ -89,7 +87,6 @@
     h5 {display: none;}
     p { display: block;
     border-top: 1px darkgray solid;
-    transition: $transition;
     padding: 1vh 2vh 7vh;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
