@@ -39,16 +39,17 @@
   }
 
 #aboutCard1 {
-  background-color: lightblue;
+  background-color: #f4f4f4;
   border-radius: 12px 12px 0 0;
   margin: 24px auto 0;
-  box-shadow: none;
+  box-shadow: #1c1c1c -10px -12px 17px -18px;
   background-position-y: bottom;
     &:hover {
     background-image: url("https://res.cloudinary.com/k2x4b-523p/image/upload/v1655199940/9299F2C1-F75F-42F3-9B7C-984D09647D7D_1_105_c-removebg_nnl2yy.png");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position-y: top;
+    filter: drop-shadow(2px 0px 4px #444);
   }
 }
 #aboutCard2 {
