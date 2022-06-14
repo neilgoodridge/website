@@ -1,10 +1,10 @@
-const showHomePage = document.getElementById("showHome");
+// const showHomePage = document.getElementById("showHome");
 // const showProjects = document.getElementById("projectShow");
 
 
-btnHome.addEventListener('onclick', function handleMouseOver() {
-  showHomePage.style.display = 'block';
-});
+// btnHome.addEventListener('onclick', function handleMouseOver() {
+//   showHomePage.style.display = 'block';
+// });
 
 // btnProjects.addEventListener('mouseover', function handleMouseOver() {
 //   showProjects.style.display = 'block';

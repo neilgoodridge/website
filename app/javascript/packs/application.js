@@ -11,6 +11,7 @@ import "channels"
 import "./scroll_top"
 import "./hide_items"
 import "./fade_in"
+import "./click_to_show"
 
 Rails.start()
 Turbolinks.start()

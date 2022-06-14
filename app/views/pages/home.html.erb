@@ -1,19 +1,22 @@
 <div class="homepage" style="background-image: url()">
   <div class="homePage" id="showHome">
     <div class="homepage-sections">
+      <%# // visible page starts here // %>
       <div class="homepage-container">
-        <div class="intro-tab tab">
+        <div class="intro-tab tab w3-animate-bottom" id="delay1">
           <h2 class="tab-heading">Welcome</h2>
           <div class="tab-surround">
             <div class="hide-div" style="background-image: url()">
-              <h3>Hi, I'm Neil.</span></h3> <h4>A full stack web developer based in London.</h4>
+              <h3>Hi, I'm Neil.</h3>
+              <img class="profile" src="https://res.cloudinary.com/k2x4b-523p/image/upload/ar_1:1,c_fill,e_make_transparent:10,g_auto,w_1000/v1627512518/me-removebg_hjglpg.png">
+              <h4>A full stack web developer based in London.</h4>
               <p>Have a look around, see what projects I've worked on, what I've got coming up, and learn a bit more about me. <br><br>
                 I'm open to a web development role in London or remote. If you see something that interests you, please get in touch  ↗ <br>
               </p>
             </div>
           </div>
         </div>
-        <div class="projects-tab tab">
+        <div class="projects-tab tab" id="delay2">
           <h2 class="tab-heading">Projects</h2>
           <div class="tab-surround">
             <div class="hide-div" style="background-image: url()">
@@ -21,7 +24,7 @@
             </div>
           </div>
         </div>
-        <div class="about-me-tab tab">
+        <div class="about-me-tab tab" id="delay3">
           <h2 class="tab-heading">About</h2>
           <div class="tab-surround">
             <div class="hide-div" style="background-image: url()">
@@ -33,6 +36,23 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  setTimeout(function(){
+  document.getElementById('delay1').style.visibility = "visible";
+  },0);
+</script>
+<script>
+  setTimeout(function(){
+  document.getElementById('delay2').style.visibility = "visible";
+  },0);
+</script>
+<script>
+  setTimeout(function(){
+  document.getElementById('delay3').style.visibility = "visible";
+  },0);
+</script>
 
 
 

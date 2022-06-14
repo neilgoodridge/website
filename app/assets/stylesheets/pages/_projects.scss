@@ -4,18 +4,21 @@
   background: #f6f6f6;
   display: flex;
   align-items: center;
-  margin: 2vh;
+  margin: 2vh 7vh;
   position: relative;
   border: $border;
   background-size: cover;
   background-position: center;
+  transition: transform .4s;
+  filter: grayscale(50%);
   h5 {font-family: 'Quicksand', sans-serif;
     font-size: 3em;
     font-weight: bolder;
     -webkit-text-stroke: 2px black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     color: white;
     width: 80%;
-    transition: $transition;
+    // transition: $transition;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -25,8 +28,15 @@
     margin: 0;
   }
 }
+.project-card a{
+  transform: scale(0);
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 8px
+}
+
 .project-card p {
-  opacity: 0;
   transform: scale(0);
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
@@ -34,16 +44,16 @@
   width: 80%;
   margin: auto;
   overflow: scroll;
+  opacity: 0;
 }
 
 
 .project-card:hover {
   box-shadow: 0 0 0 200px rgba(0,0,0,0.85) inset;
-  transition: $transition;
+  // transition: ease-in 0.8s;
   cursor: pointer;
   h5 {opacity: 0;}
-  p {
-    opacity: 1;
-    transform: scale(1);
-  }
+  p {opacity: 1; transform: scale(1);}
+  a {transform: scale(1); transition-delay: 1s;}
 }
+
