@@ -1,17 +1,23 @@
 
+//this bounces the profile pictue on a mouseover event
+
+document.getElementById("profile").addEventListener("mouseover", repeatImage);
+
+function repeatImage() {
+  event.currentTarget.classList.toggle("profileHover");
+}
+
+//code below used for showing homepage sections after a brief delay. This was superceded by
+// css using keyframes, but code kept regardless - JIC.
 
 // setTimeout(function(){
-// document.getElementById('delay-1').style.visibility = "visible";
-// },1000);
+// document.getElementById('delay1').style.visibility = "visible";
+// },0);
 
 // setTimeout(function(){
-// document.getElementById('delay-2').style.visibility = "visible";
+// document.getElementById('delay2').style.visibility = "visible";
 // },1500);
 
 // setTimeout(function(){
-// document.getElementById('delay-3').style.visibility = "visible";
-// },2000);
-
-// setTimeout(function(){
-// document.getElementById('delay-4').style.visibility = "visible";
-// },2500);
+// document.getElementById('delay3').style.visibility = "visible";
+// },3000);
