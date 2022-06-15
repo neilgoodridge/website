@@ -9,7 +9,6 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
 import "./about"
-import "./hide_items"
 import "./fade_in"
 
 Rails.start()
