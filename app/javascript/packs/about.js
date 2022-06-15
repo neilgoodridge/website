@@ -8,23 +8,3 @@
     event.currentTarget.classList.toggle("aboutCardClicked");
 }
 
-
-
-
-//   function changeHeight() {
-//     event.currentTarget.classList.toggle("aboutCardClicked");
-// }
-
-
-
-
-//   function changeHeight() {
-//     event.currentTarget.classList.toggle("aboutCardClicked");
-// }
-
-
-
-
-//   function changeHeight() {
-//     event.currentTarget.classList.toggle("aboutCardClicked");
-// }
