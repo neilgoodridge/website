@@ -8,7 +8,7 @@ import "bootstrap"
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
-import "./scroll_top"
+import "./about"
 import "./hide_items"
 import "./fade_in"
 

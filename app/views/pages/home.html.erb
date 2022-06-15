@@ -3,7 +3,7 @@
     <div class="homepage-sections">
       <%# // visible page starts here // %>
       <div class="homepage-container">
-        <div class="intro-tab tab w3-animate-bottom" id="delay1">
+        <div class="intro-tab tab" id="delay1">
           <h2 class="tab-heading">Welcome</h2>
           <div class="tab-surround">
             <div class="hide-div" style="background-image: url()">
@@ -37,34 +37,5 @@
   </div>
 </div>
 
-<script>
-  document.getElementById("profile").addEventListener("mouseover", repeatImage);
-
-  function repeatImage() {
-    event.currentTarget.classList.toggle("profileHover");
-}
-</script>
-
-<script>
-  setTimeout(function(){
-  document.getElementById('delay1').style.visibility = "visible";
-  },0);
-</script>
-<script>
-  setTimeout(function(){
-  document.getElementById('delay2').style.visibility = "visible";
-  },0);
-</script>
-<script>
-  setTimeout(function(){
-  document.getElementById('delay3').style.visibility = "visible";
-  },0);
-</script>
-
-
-
-<%# scroll button function %>
-<%# <%= javascript_pack_tag 'hide_items.js' %>
-
-<%# background image: url  %>
-<%# 'https://images.unsplash.com/photo-1550684848-86a5d8727436?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80clearthistextforbackground' %>
+<%# sections fade in and profile picture bounce %>
+<%= javascript_pack_tag 'fade_in.js' %>
