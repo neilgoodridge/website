@@ -79,15 +79,15 @@
   }
 }
 
-.projects-tab:hover {
-  display: block;
-  background-color: #F4F4F4;
-  + .about-tab {background-color: lightcoral;}
-}
 .intro-tab:hover {
   display: block;
   background-color: #F4F4F4;
   + .projects-tab {background-color: lightblue;}
+}
+.projects-tab:hover {
+  display: block;
+  background-color: #F4F4F4;
+  + .about-tab {background-color: lightcoral;}
 }
 .about-me-tab:hover {
   display: block;
@@ -104,17 +104,17 @@
 }
 
 .profile {
-  // transition: $transition;
-  border: 16px solid lightcoral;
-  background: radial-gradient(circle, white 35%, lightyellow 55%, lightblue 55%);
-  border-radius: 50%;
+  transition: $transition;
   height: 20vh;
+  border-radius: 50%;
 }
 
 .profileHover {
-  animation-name: profileHover;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  border: 16px solid lightcoral;
+  background: radial-gradient(circle, white 35%, lightyellow 55%, lightblue 55%);
+  // transform: scale(1.15);
+  // animation: profileHover 3s linear 0s infinite normal;
+  transform: scale(1.15)
 }
 @keyframes profileHover {
   from {transform: scale(1);}
