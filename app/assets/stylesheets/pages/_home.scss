@@ -24,7 +24,7 @@
   overflow: hidden;
   text-align: center;
     h2 {transition: $transition;-webkit-text-stroke: 1px black; font-size: 4em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif;}
-    h3, h4 {transition: $transition; -webkit-text-stroke: 1px black;font-size: 2.2em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif; margin: 1vh 3vh;}
+    h3, h4 {transition: $transition; -webkit-text-stroke: 1px black;font-size: 2.2em; color: white; font-weight: 500; font-family: 'Quicksand', sans-serif; margin: 3vh;}
     h5, p, a {transition: $transition; opacity: 0;}
     &:hover {width: 100%; border-top: 2px transparent solid;
       h2 {font-size: 6em; color: black;}
@@ -37,10 +37,11 @@
   background-color: lightblue;
   background-size: cover;
   border-right: $border;
-  p {font-size: 1.5em; color: black; font-weight: bold; font-family: 'Quicksand', sans-serif;
-    margin: 0 7vh;
+  overflow: scroll;
+  p {font-size: 1.3em; color: black; font-weight: normal; font-family: 'Quicksand', sans-serif;
+    padding: 9vh 3vh;
+    margin: 2vh 5vh;
     height: 43vh;
-    overflow: scroll;
     position: absolute;
     top: 14em;
   }
@@ -82,12 +83,17 @@
 .intro-tab:hover {
   display: block;
   background-color: #F4F4F4;
-  + .projects-tab {background-color: lightblue;}
+  .profile {
+    border: 16px solid lightcoral;
+    transform: scale(1.15);
+  }
+  +.projects-tab {background-color: lightblue;}
+
 }
 .projects-tab:hover {
   display: block;
   background-color: #F4F4F4;
-  + .about-tab {background-color: lightcoral;}
+  +.about-tab {background-color: lightcoral;}
 }
 .about-me-tab:hover {
   display: block;
@@ -107,16 +113,11 @@
   transition: $transition;
   height: 20vh;
   border-radius: 50%;
+  border: 2px solid black;
+  background: radial-gradient(circle, white 40%, lightyellow 40%, lightyellow 55%, lightblue 55%);
 }
 
-.profileHover {
-  border: 16px solid lightcoral;
-  background: radial-gradient(circle, white 35%, lightyellow 55%, lightblue 55%);
-  // transform: scale(1.15);
-  // animation: profileHover 3s linear 0s infinite normal;
-  transform: scale(1.15)
-}
 @keyframes profileHover {
-  from {transform: scale(1);}
-  to {transform: scale(1.15);}
+  from {border: 2px solid black;}
+  to {border: 16px solid lightcoral;}
 }

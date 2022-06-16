@@ -9,7 +9,7 @@
   border: $border;
   background-size: cover;
   background-position: center;
-  transition: transform .4s;
+  transition: $transition;
   filter: grayscale(50%);
   h5 {font-family: 'Quicksand', sans-serif;
     font-size: 3em;
@@ -39,6 +39,7 @@
 .project-card p {
   transform: scale(0);
   font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   font-size: 1em;
   color: white;
   width: 80%;

@@ -23,8 +23,8 @@
   background-color: rgb(96, 96, 96);
   background-size: cover;
   background-position: center;
-  &:hover {cursor: pointer;}
   p, ul,  { display: none; list-style: none}
+  &:hover {cursor: pointer;}
   h5 {font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -73,7 +73,7 @@
   background-position-y: bottom;
   margin-bottom: 24px;
   border-radius: 12px;
-  p {margin-bottom: -24px}
+  p {margin-bottom: -24px }
   &:hover {
     background-image: url("https://res.cloudinary.com/k2x4b-523p/image/upload/v1655198208/guitar-2533937c939b890c33bb6ed271a2ced1-removebg-preview_jfdr7j.png");
     background-position-y: top;
@@ -82,7 +82,7 @@
   }
 }
 .aboutCardClicked {
-    transition: $transition;
+    // transition: $transition;
     height: 150%;
     h5 {display: none;}
     p { display: block;
@@ -99,4 +99,6 @@
     overflow: scroll;
     filter: none;
     -webkit-filter: none;}
+
+      transition-delay: 0.5s;
 }
