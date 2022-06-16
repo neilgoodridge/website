@@ -1,7 +1,7 @@
 
-//this bounces the profile pictue on a mouseover event
+//this alters the profile pictue on a mouseover event
 
-document.getElementById("profile").addEventListener("mouseover", repeatImage);
+document.getElementById("profile").addEventListener("click", repeatImage);
 
 function repeatImage() {
   event.currentTarget.classList.toggle("profileHover");
