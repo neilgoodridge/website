@@ -98,7 +98,28 @@
     height: auto;
     overflow: scroll;
     filter: none;
-    -webkit-filter: none;}
+    -webkit-filter: none;
 
-      transition-delay: 0.5s;
+  }
+}
+.slideUp {
+  position:absolute;
+  bottom:-50px;;
+  // height:auto;
+  width:100%;
+  left:0;
+  animation-name: slideUp;
+  animation-delay:0.5s;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+  animation-timing-function:ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: 23%;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
