@@ -23,8 +23,6 @@
   background-color: rgb(96, 96, 96);
   background-size: cover;
   background-position: center;
-  p, ul,  { display: none; list-style: none}
-  &:hover {cursor: pointer;}
   h5 {font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -35,7 +33,24 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);}
+  &:hover {cursor: pointer;}
   }
+
+.about-card-info {
+  p, ul  { display: none;
+    list-style: none;
+    border-top: 1px darkgray solid;
+    padding: 1vh 2vh 7vh;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    position: absolute;
+    bottom: -12px;
+    background-color: #f6f6f6;
+    border-radius: 12px 12px 0 0;
+    color: black;
+    height: auto;
+  }
+}
 
 #aboutCard1 {
   background-color: #f4f4f4;
@@ -82,44 +97,31 @@
   }
 }
 .aboutCardClicked {
-    // transition: $transition;
     height: 150%;
     h5 {display: none;}
-    p { display: block;
-    border-top: 1px darkgray solid;
-    padding: 1vh 2vh 7vh;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.1em;
-    position: absolute;
-    bottom: -12px;
-    background-color: #f6f6f6;
-    border-radius: 12px 12px 0 0;
-    color: black;
-    height: auto;
-    overflow: scroll;
-    filter: none;
-    -webkit-filter: none;
-
+  .about-card-info {
+    p, ul {display: block;}
   }
-}
-.slideUp {
-  position:absolute;
-  bottom:-50px;;
-  // height:auto;
-  width:100%;
-  left:0;
-  animation-name: slideUp;
-  animation-delay:0.5s;
-  animation-duration:0.8s;
-  animation-fill-mode:forwards;
-  animation-timing-function:ease-out;
 }
 
-@keyframes slideUp {
-  0% {
-    margin-top: 23%;
-  }
-  100% {
-    margin-top: 0;
-  }
-}
+// .slideUp {
+//   position:absolute;
+//   bottom:-50px;;
+//   // height:auto;
+//   width:100%;
+//   left:0;
+//   animation-name: slideUp;
+//   animation-delay:0.5s;
+//   animation-duration:0.8s;
+//   animation-fill-mode:forwards;
+//   animation-timing-function:ease-out;
+// }
+
+// @keyframes slideUp {
+//   0% {
+//     margin-top: 23%;
+//   }
+//   100% {
+//     margin-top: 0;
+//   }
+// }

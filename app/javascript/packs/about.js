@@ -8,6 +8,8 @@
     event.currentTarget.classList.toggle("aboutCardClicked");
 }
 
+
+
 //   function changeHeightReturn() {
 //     event.currentTarget.classList("aboutCard1");
 // }

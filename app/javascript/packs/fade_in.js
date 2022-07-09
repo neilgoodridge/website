@@ -21,3 +21,12 @@ function repeatImage() {
 // setTimeout(function(){
 // document.getElementById('delay3').style.visibility = "visible";
 // },3000);
+
+  document.getElementById("aboutCard1").addEventListener("mouseup", closeP);
+  document.getElementById("aboutCard2").addEventListener("mouseup", closeP);
+  document.getElementById("aboutCard3").addEventListener("mouseup", closeP);
+  document.getElementById("aboutCard4").addEventListener("mouseup", closeP);
+
+function closeP() {
+  event.currentTarget.classList.toggle("aboutCardClicked");
+}
