@@ -63,3 +63,10 @@
 .nav>#nav-check {
   display: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-links {
+    width: 60vw;
+  }
+
+}
