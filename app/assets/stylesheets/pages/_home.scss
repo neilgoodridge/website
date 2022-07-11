@@ -20,8 +20,8 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
-    h2 {transition: $transition;-webkit-text-stroke: 1px black; font-size: 4em; color: white; font-weight: bold; font-family: 'Quicksand', sans-serif;}
-    h3, h4 {transition: $transition; -webkit-text-stroke: 1px black;font-size: 2.2em; color: white; font-weight: 500; font-family: 'Quicksand', sans-serif; margin: 3vh;}
+    h2 {transition: $transition;-webkit-text-stroke: 1px black; font-size: 4em; color: white; font-weight: 400; font-family: 'Quicksand', sans-serif;}
+    h3, h4 {transition: $transition; -webkit-text-stroke: 1px black;font-size: 2.2em; color: white; font-weight: 400; font-family: 'Quicksand', sans-serif; margin: 3vh;}
     h5, p, a {transition: $transition; opacity: 0;}
     &:hover {width: 100%; border-top: 2px transparent solid;
       h2 {font-size: 6em; color: black; font-weight: 600;}
@@ -130,16 +130,19 @@
 
 @media only screen and (max-width: 500px) {
   .contact-links {width: 60vw;}
-  .homepage-container {flex-direction: column;}
+  .homepage-container {flex-direction: column; margin-top: 5vh;}
   .tab {width: 100vw;
-    height: 33%;
+    height: 31.3%;
     border-left: none;
     border-right: none;}
   .tab:hover {height: 250%;
     h2 {font-size: 4em; font-weight: 400;}
     h3, h4 {font-size: 1.6em; font-weight: 300; margin: 2vh;}
-    .intro-tab:hover {height: 250%; background-color: transparent;}
+    .intro-tab {height: 250%; background-color: transparent;}
     p {font-size: 1.1em; padding: 2vh 0vh; margin: 2vh 3vh; height: auto;}
   }
-
+  @keyframes slideinnav {
+    from { width: 30vw;}
+    to { width: 60vw;}
+  }
 }
