@@ -129,11 +129,11 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .body {min-height: -webkit-fill-available;}
+  // .body {min-height: -webkit-fill-available;}
   .contact-links {width: 60vw;}
   .homepage-container {flex-direction: column;}
   .tab {width: 100vw;
-    height: 31vh;
+    height: 28vh;
     border-left: none;
     border-right: none;}
   .intro-tab p {font-size: 1.1em; padding: 2vh 0vh; margin: 2vh 3vh; overflow: auto;}
