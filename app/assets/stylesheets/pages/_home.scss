@@ -129,20 +129,26 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .body {height: -webkit-fill-available;}
   .contact-links {width: 60vw;}
-  .homepage-container {flex-direction: column; margin-top: 5vh;}
+  .homepage-container {flex-direction: column;}
   .tab {width: 100vw;
-    height: 31.3%;
+    height: 31vh;
     border-left: none;
     border-right: none;}
-  .tab:hover {height: 250%;
+  .intro-tab p {font-size: 1.1em; padding: 2vh 0vh; margin: 2vh 3vh; height: auto;}
+  .tab:hover {height: 250%; border-top: $border;
     h2 {font-size: 4em; font-weight: 400;}
     h3, h4 {font-size: 1.6em; font-weight: 300; margin: 2vh;}
-    .intro-tab {height: 250%; background-color: transparent;}
-    p {font-size: 1.1em; padding: 2vh 0vh; margin: 2vh 3vh; height: auto;}
   }
   @keyframes slideinnav {
     from { width: 30vw;}
     to { width: 60vw;}
   }
+  @keyframes slideinintro {
+  from {margin-bottom: 100%;
+    width: 100vw;}
+  to {margin-bottom: 0%;
+    width: 100vw;}
+}
 }
