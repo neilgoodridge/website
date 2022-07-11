@@ -133,10 +133,10 @@
   .contact-links {width: 60vw;}
   .homepage-container {flex-direction: column;}
   .tab {width: 100vw;
-    height: 28vh;
+    height: 29vh;
     border-left: none;
     border-right: none;}
-  .intro-tab p {font-size: 1.1em; padding: 2vh 0vh; margin: 2vh 3vh; overflow: auto;}
+  .intro-tab p {font-size: 1.1em; padding: 2vh 0vh; margin: 2vh 3vh; overflow: auto; margin-top: 5vh;}
   .tab:hover {height: 250%; border-top: $border;
     h2 {font-size: 4em; font-weight: 400;}
     h3, h4 {font-size: 1.6em; font-weight: 300; margin: 2vh;}
