@@ -4,13 +4,7 @@
 
 
 /* Small devices (portrait tablets and large phones, 500px and up) */
-@media only screen and (max-width: 500px) {
-  .contact-links {width: 60vw;}
-  .homepage-container {flex-direction: column;}
-  .tab {width: 100vw;
-    height: 33%;}
-  .tab:hover {height: 100%;}
-}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
