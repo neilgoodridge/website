@@ -65,6 +65,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .nav {min-height: -webkit-fill-available;}
   .contact-links {
     width: 60vw;
   }
